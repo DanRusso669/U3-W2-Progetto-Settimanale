@@ -1,14 +1,14 @@
-import { Row } from "react-bootstrap";
-import MainCity from "./MainCity";
+import { Container, Row } from "react-bootstrap";
+
 import Hero from "./Hero";
 import MostSearched from "./MostSearched";
 
 const Homepage = ({ changeState }) => {
   return (
-    <div className="mainSection">
+    <Container className="mainSection">
       <Hero changeState={changeState} />
       <MostSearched changeState={changeState} />
-    </div>
+    </Container>
   );
 };
 

@@ -1,17 +1,18 @@
 import { Container, Image, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const TopBar = function () {
   return (
-    <Navbar expand="lg" bg="info">
+    <Navbar expand="lg" className="topbar ">
       <Container>
         <Image src="https://cdn.worldvectorlogo.com/logos/react-1.svg" id="logo" />
-        <Navbar.Brand href="#home" className="ms-3">
-          Weather U Like{" "}
-        </Navbar.Brand>
+        <Navbar.Brand className="ms-3">Weather U Like</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Link to="/" className="nav-link">
+              Home
+            </Link>
             <Nav.Link href="#link">Contacts</Nav.Link>
             <Nav.Link href="#bob">Navigate</Nav.Link>
           </Nav>

@@ -6,13 +6,13 @@ const MainCity = props => {
 
   return (
     <Col className="mostSearched">
-      <Card>
+      <Card className=" bg-transparent border-1">
         <Card.Img variant="top" src={props.image} className="mostSearchedImgs" />
         <Card.Body>
           <Card.Title>{props.name}</Card.Title>
-          <Card.Text>{props.country}</Card.Text>
+          <Card.Text className="mb-2">{props.country}</Card.Text>
           <Button
-            variant="primary"
+            className="suggested"
             onClick={() => {
               props.changeState(props.name);
               navigate("/details");

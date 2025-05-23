@@ -1,11 +1,11 @@
-import { Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import MainCity from "./MainCity";
 
 const MostSearched = ({ changeState }) => {
   return (
     <>
       <h4 className="mt-5 mb-3">Most Searched Cities</h4>
-      <Row sm={2} md={3} lg={4} xl={6} className="gy-4 align-items-center">
+      <Row xs={2} md={3} xl={6} className="gy-4 align-items-center">
         <MainCity
           changeState={changeState}
           name="Milan"

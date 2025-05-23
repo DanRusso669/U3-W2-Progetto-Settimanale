@@ -1,5 +1,13 @@
 body,
-p,
+p {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
 h1,
 h2,
 h3,
@@ -7,11 +15,19 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* NAVBAR */
 #logo {
   max-width: 40px;
+}
+
+.topbar {
+  background: #309ac7;
+  background: linear-gradient(316deg, rgba(48, 154, 199, 1) 0%, rgba(132, 219, 216, 1) 50%, rgba(47, 194, 169, 1) 95%);
 }
 
 /* MAIN CITY*/
@@ -24,11 +40,36 @@ h6 {
   object-fit: cover;
 }
 
+.suggested {
+  font-size: 13px;
+  background-color: rgb(55, 189, 126);
+  border: none;
+  color: black;
+}
+
+.central {
+  background: #65a34b;
+  background: linear-gradient(325deg, rgba(101, 163, 75, 0.54) 0%, rgba(114, 247, 116, 0.34) 100%);
+}
+
+.nextDays {
+  background: #e6e1e1;
+  background: linear-gradient(114deg, rgba(230, 225, 225, 0.54) 0%, rgba(240, 242, 240, 0.34) 80%);
+}
 /* FOOTER */
 #footerCont p {
   margin: 0;
   margin-left: 1rem;
   margin-block: 1rem;
+}
+
+footer {
+  background: #309ac7;
+  background: linear-gradient(316deg, rgba(48, 154, 199, 1) 0%, rgba(132, 219, 216, 1) 50%, rgba(47, 194, 169, 1) 95%);
+}
+
+footer p {
+  color: rgb(41, 37, 37);
 }
 
 /* HOMEPAGE */
