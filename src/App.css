@@ -1,0 +1,41 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* NAVBAR */
+#logo {
+  max-width: 40px;
+}
+
+/* MAIN CITY*/
+.mostSearched {
+  max-width: 250px;
+}
+
+.mostSearchedImgs {
+  min-height: 300px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+#footerCont p {
+  margin: 0;
+  margin-left: 1rem;
+  margin-block: 1rem;
+}
+
+/* HOMEPAGE */
+.mainSection {
+  min-height: calc(100vh - 56px - 56px);
+}
+
+.searchBar {
+  width: 500px;
+}
