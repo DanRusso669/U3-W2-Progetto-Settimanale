@@ -2,15 +2,14 @@ import { useState } from "react";
 import { Button, Form, InputGroup } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-const Hero = ({ changeState }) => {
+const Hero = () => {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = e => {
     e.preventDefault();
 
-    changeState(query);
-    navigate("/details");
+    navigate("/details/" + query);
   };
 
   return (

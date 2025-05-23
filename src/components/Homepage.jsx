@@ -3,11 +3,11 @@ import { Container, Row } from "react-bootstrap";
 import Hero from "./Hero";
 import MostSearched from "./MostSearched";
 
-const Homepage = ({ changeState }) => {
+const Homepage = () => {
   return (
     <Container className="mainSection">
-      <Hero changeState={changeState} />
-      <MostSearched changeState={changeState} />
+      <Hero />
+      <MostSearched />
     </Container>
   );
 };

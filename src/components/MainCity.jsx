@@ -14,8 +14,7 @@ const MainCity = props => {
           <Button
             className="suggested"
             onClick={() => {
-              props.changeState(props.name);
-              navigate("/details");
+              navigate("/details/" + props.name);
             }}
           >
             Check the weather

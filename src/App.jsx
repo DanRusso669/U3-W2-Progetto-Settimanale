@@ -9,15 +9,13 @@ import { useState } from "react";
 import NotFound from "./components/NotFound";
 
 function App() {
-  const [citySelected, setCitySelected] = useState("");
-
   return (
     <BrowserRouter>
       <TopBar />
       <div className="central">
         <Routes>
-          <Route path="/" element={<Homepage changeState={setCitySelected} />} />
-          <Route path="/details" element={<Details query={citySelected} />} />
+          <Route path="/" element={<Homepage />} />
+          <Route path="/details/:query" element={<Details />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

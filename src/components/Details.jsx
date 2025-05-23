@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import WeatherHero from "./WeatherHero";
 import { Alert, Container } from "react-bootstrap";
+import { useParams } from "react-router-dom";
 
 const Details = ({ query }) => {
   const [lat, setLat] = useState(null);
@@ -8,8 +9,11 @@ const Details = ({ query }) => {
   const [weatherInfo, setWeatherInfo] = useState(null);
   const [error, setError] = useState(false);
 
-  const fetchedLatAndLon = query => {
-    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${query}&appid=1502c70585e490ebc493d594016bd7fe`, {})
+  const params = useParams();
+  console.log(params.query);
+
+  const fetchedLatAndLon = () => {
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${params.query}&appid=1502c70585e490ebc493d594016bd7fe`, {})
       .then(resp => {
         if (resp.ok) {
           return resp.json();
