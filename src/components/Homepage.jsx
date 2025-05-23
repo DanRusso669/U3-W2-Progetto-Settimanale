@@ -1,4 +1,4 @@
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 import Hero from "./Hero";
 import MostSearched from "./MostSearched";
